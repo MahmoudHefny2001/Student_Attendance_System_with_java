@@ -6,33 +6,31 @@ package sw_project;
 
 
 import java.sql.*;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import javax.swing.JFrame;
-
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author mahmoud-hefny
  */
-public class SW_project{
+public class SW_project extends javax.swing.JFrame{
 
-    private final String url = "jdbc:postgresql://localhost/student_system";
-    private final String user = "postgres";
-    private final String password = "MA7MOUD7EFNY.";
+//    private final String url = "jdbc:postgresql://localhost/student_system";
+//    private final String user = "postgres";
+//    private final String password = "MA7MOUD7EFNY.";
     
     
-    public Connection connect() {
-        Connection connection = null;
-        try {
-            connection = DriverManager.getConnection(url, user, password);
-            System.out.println("Connected to the PostgreSQL server successfully.");
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-
-        return connection;
-    }
+//    public Connection connect() {
+//        Connection connection = null;
+//        try {
+//            connection = DriverManager.getConnection(url, user, password);
+//            System.out.println("Connected to the PostgreSQL server successfully.");
+//        } catch (SQLException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//        return connection;
+//    }
 
     /**
      * @param args the command line arguments
@@ -44,9 +42,10 @@ public class SW_project{
         frame.setVisible(true);
         frame.setResizable(false);
         frame.setLocation(100, 100);
+                
         
         SW_project app = new SW_project();
-        app.connect();
+//        app.connect();
         
     }
      
